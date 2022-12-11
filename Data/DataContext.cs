@@ -8,6 +8,13 @@ namespace e_commerce_backend.Data
         {
 
         }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Whislist> Whislists { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+
     }
 
 }
