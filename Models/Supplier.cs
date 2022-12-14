@@ -9,5 +9,5 @@ public class Supplier
     [MaxLength(50)]
     public String last_name { get; set; }
 
-    public Product Product { get; set; }
+    public Product? Product { get; set; }
 }

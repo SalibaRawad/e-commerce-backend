@@ -7,7 +7,7 @@ public class Product
     public String name { get; set; }
 
     public int SupplierId { get; set; }
-    public virtual Supplier Supplier { get; set; }
+    public virtual Supplier? Supplier { get; set; }
 
     [Required]
     public int price { get; set; }
@@ -23,9 +23,9 @@ public class Product
     public int discount_percentage { get; set; }
 
     public int CategoryId { get; set; }
-    public virtual Category Category { get; set; }
+    public virtual Category? Category { get; set; }
 
-    public WhislistItem WhislistItem { get; set; }
+    public WhislistItem? WhislistItem { get; set; }
 
     public Order order { get; set; }
 
