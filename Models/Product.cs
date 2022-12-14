@@ -3,6 +3,8 @@ public class Product
 {
 
     public int Id { get; set; }
+    [MaxLength(50)]
+    public String name { get; set; }
 
     public int SupplierId { get; set; }
     public virtual Supplier Supplier { get; set; }
@@ -24,5 +26,8 @@ public class Product
     public virtual Category Category { get; set; }
 
     public WhislistItem WhislistItem { get; set; }
+
+    public Order order { get; set; }
+
 
 }

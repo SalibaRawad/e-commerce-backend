@@ -22,5 +22,7 @@ public class User
 
     public Whislist whislist { get; set; }
 
+    public Order order { get; set; }
+
 
 }
